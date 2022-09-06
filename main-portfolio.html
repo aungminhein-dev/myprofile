@@ -71,22 +71,23 @@
 <!-- profile -->
  <article id="home" class="home text-light mt-3">
   <div class="container-lg justify-content-center ">
-    <div class="row min-vh-100 opacity-7 container-lg  align-content-center justify-content-center bg-black shadow-lg rounded-3">
-      <div class="col-md-6">
-        <img src="./img/prof.png"width=250px; height="250px" class=" rounded-circle shadow-lg"data-aos="fade-left" data-aos-duration="2000">
-      </div>
 
-      <div class="col-md-6 order-md-first mt-sm-4" data-aos="fade-right" data-aos-duration="2000">
-       <div class="d-flex">
-          <h1 class=" text-white-50 fs-5">Hello I'm</h1>
-          <h1 class="text-danger fs-5 typing"></h1>
-       </div>
-        <h2 class="text-white-50">a Grade 10 <span class="text-danger">Student</span>
-        </h2>
-        <p class=" text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.Officia laborum hic, nulla magnam facilis neque evenie est praesentium voluptate voluptatibus in qui magni iusto aliquam ut dicta consequatur modi cum.</p>
-        <a href="#" class="btn btn-info px-4 shadow">Hire Me</a>
-      </div>
-    </div>
+        <div class="row min-vh-100 opacity-7 container-lg  align-content-center justify-content-center shadow-lg rounded-3">
+            <div class="col-md-6">
+              <img src="./img/prof.png"width=250px; height="250px" class=" rounded-circle shadow-lg"data-aos="fade-left" data-aos-duration="2000">
+            </div>
+      
+            <div class="col-md-6 order-md-first mt-sm-4" data-aos="fade-right" data-aos-duration="2000">
+             <div class="d-flex">
+                <h1 class=" text-white-50 fs-5">Hello I'm</h1>
+                <h1 class="text-info fs-5 typing"></h1>
+             </div>
+              <h2 class="text-white-50">a Grade 10 <span class="text-info">Student</span>
+              </h2>
+              <p class=" text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.Officia laborum hic, nulla magnam facilis neque evenie est praesentium voluptate voluptatibus in qui magni iusto aliquam ut dicta consequatur modi cum.</p>
+              <a href="#" class="btn btn-info px-4 shadow">Hire Me</a>
+            </div>
+          </div>
   </div>
 </article>
 <!-- profile# -->
@@ -94,7 +95,7 @@
 <!-- skilll -->
 <article class="skill" id="skills">
   <div class="container-lg">
-    <div class="row m-4 shadow-lg rounded-3 p-5">
+    <div class="row m-4 shadow-lg rounded-3 p-5 p-sm-0">
       <h1 class="text-center text-white-50 fw-bolder mb-5">Those what I'm Good at</h1>
       <div class="row mt-3"data-aos="fade-down" data-aos-duration="1500">
         <div class="col-md-6" data-aos="fade-up-right" data-aos-duration="1500"><!--col1-->
@@ -118,7 +119,7 @@
           </div>
           <div class="row">
             <div class="col-sm-4 mt-3">
-              <a href="#" class="btn btn-info px-2 shadow align-items-center">Download CV</a>
+              <a href="#" class="btn btn-info p-sm-0 shadow align-items-center">Download CV</a>
             </div>
             <div class="col-sm-8 mt-3 mb-3 ">
               <div class="social align-items-center">
@@ -141,7 +142,7 @@
             </div>
           </div>
         </div> <!--col2-->
-        <div class="col-md-6 shadow bg-black p-5"data-aos="fade-up-left" data-aos-duration="2000">
+        <div class="col-md-6 shadow bg-black p-5 p-sm-0"data-aos="fade-up-left" data-aos-duration="2000">
           <div class="percent-box mb-5">
             <h4 class=" text-info fs-4 mb-3 fw-light rounded-2">HTML<i class="fa-brands fa-html5 ms-1"></i></h4>
             <div class="progress" style="height: 2px;">
@@ -482,7 +483,7 @@
   AOS.init();
  </script>
  <script>
-  const texts = ["Aung Min Hein.","Studying Web Development.","I am 17 years old."];
+  const texts = ["Aung Min Hein.","Studying Web Development.","17 years old."];
   let count = 0;
   let index = 0;
   let currentText = "";
