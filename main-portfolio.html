@@ -329,7 +329,7 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-info" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div  data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="carousel-item active shake">
               <div class=" p-5 m-2 bg-light rounded-1 position-relative shadow">
                 <div class="infos d-flex align-items-center">
                   <img src="./img/prof.png" class=" rounded-circle shadow img-thumbnail" width="120px" height="120px" alt="">
@@ -446,27 +446,39 @@
           </div>
         </div>
       </div>
-      <div class="col-md-7 justify-content-start align-items-center px-5" >
+      <div class="col-md-7 justify-content-start align-items-center px-5" data-aos="fade-down" data-aos-duration="1200">
         <form action="#" class="">
           <div class="row my-3">
-            <div class="col-6 ">
-              <input type="text" placeholder=" Enter Your Name..." class=" w-100 p-1 fs-6 form-control bg-black text-info">
+            <div class="col-md-6 my-2">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Name...">
+                <label for="floatingInput">Name</label>
+              </div>
             </div>
-            <div class="col-6 rounded-2">
-              <input type="email" placeholder=" Enter Your Email..." class=" w-100 p-1 fs-6 form-control bg-black text-info">
+            <div class="col-md-6 my-2 form-floating mb-3">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
             </div>
           </div>
-          <div class="row my-3 rounded-2">
+          <div class="row my-3 my-2">
             <div class="col-lg-12">
-              <input type="text" placeholder="Address..." class="p-1 w-100 fs-6 form-control bg-black text-info">
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea" class="">Address...</label>
+              </div>
             </div>
           </div>
-          <div class="row my-3 rounded-2">
-            <textarea cols="24" rows="8" placeholder="Enter Your Message..." class=" p-1 w-100 fs-6 form-control bg-black text-info"></textarea>
+          <div class="row my-3 my-2">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2" class=" ms-2">Comments</label>
+            </div>
           </div>
           <div class="row my-3">
             <div class="col-md-8 justify-content-center">
-              <a href="#" class="btn btn-info px-3">Send Message</a>
+              <button type="submit" class="btn btn-danger px-3">Send Message<i class="fa-solid fa-paper-plane mx-1"></i></button>
             </div>
           </div>
         </form>
@@ -481,7 +493,7 @@
       <div class="fle-box">
         <p class="fs-5 text-white-50">Do you have any projects?</p>
         <h2 class=" fs-1 pb-3 pt-0 fw-bold text-white">We're Available for Freelancer Projects!!!</h2>
-        <a href="#" class="btn btn-outline-light">Contact Me</a>
+        <a href="#" class="btn btn-outline-light big">Contact Me</a>
       </div>
     </div>
   </div>
@@ -489,12 +501,10 @@
 <!-- The End -->
 <footer class=" border-top">
   <div class="container-fluid">
-    <div class="row bg-dark">
       <div class="text-center py-3 my-2">
-        <p class="text-white-50 fs-3">My Life, My Passion, My Decision. Let me freely Decide!</p>
+        <p class="text-white-50 fs-5">My Life, My Passion, My Decision. Let me freely Decide!</p>
       </div>
     </div>
-  </div>
 </footer>
 </body>
 <script src="./js/bootstrap.js"></script>
@@ -503,6 +513,7 @@
  <script>
   AOS.init();
  </script>
+ <script type="text/javascript" src="vanilla-tilt.js"></script>
  <script src="./js/custom.js"></script>
 </html>
 
