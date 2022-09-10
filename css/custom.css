@@ -126,7 +126,7 @@
     background: black;
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 99999999999999;
     top: 0;
     left: 0;
   }
