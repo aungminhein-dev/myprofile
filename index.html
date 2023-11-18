@@ -1,286 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/custom.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/custom.css">
 </head>
+
 <body class=" bg-dark">
-    <!-- Loader -->
-    <div class="center dissapear">
-        <div class="ring"></div>
-        <span class="loading">Loading...</span>
-    </div>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-dark shadow sticky-top p-3 pt-0 pb-0">
-  <div class="container-fluid">
-    <div class="navbar-brand ps-3">
-      <img src="./img/5b84d407b187a38ab84ae0f1e0491433.webp" class=" rounded-4"width="60px" height="60px" alt="">
-    </div>
-    <button class="navbar-toggler text-bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse text justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item mx-3">
-          <a class="nav-link text-light" aria-current="page" href="#home">Home</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-info" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-info" href="#service">Services</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-info" href="#my-projects">My Projects</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-info" href="#members">Our Team</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link text-info" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
+  <!-- Loader -->
+  <div class="center dissapear" id="loader">
+    <div class="ring"></div>
+    <span class="loading">Loading...</span>
   </div>
-</nav>
-<!-- Navbar# -->
-<!-- profile -->
- <article id="home" class="home text-light mt-3">
-  <div class="container-lg justify-content-center ">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark shadow sticky-top p-3 pt-0 pb-0">
+    <div class="container-fluid">
+      <div class="navbar-brand ps-3">
+        <img src="./img/5b84d407b187a38ab84ae0f1e0491433.webp" class=" rounded-4" width="60px" height="60px" alt="">
+      </div>
+      <button class="navbar-toggler text-bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <a class="nav-link text-light" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-info" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-info" href="#service">Services</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-info" href="#my-projects">My Projects</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-info" href="#members">Our Team</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link text-info" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar# -->
+  <!-- profile -->
+  <article id="home" class="home text-light mt-3">
+    <div class="container-lg justify-content-center ">
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Are you having projects?</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <p class="bg-gradient text-danger"><span class="text-danger">My numbers:</span> 09767135385 | 09797957976</p>
+      </div>
 
-        <div class="row min-vh-100 opacity-7 container-lg  align-content-center justify-content-center rounded-3">
-            <div class="col-md-6">
-              <img src="./img/prof.png"width=250px; height="250px" class=" rounded-circle shadow-lg"data-aos="fade-left" data-aos-duration="2000">
-            </div>
-      
-            <div class="col-md-6 order-md-first mt-sm-4" data-aos="fade-right" data-aos-duration="2000">
-             <div class="d-flex">
-                <h1 class=" text-white-50 fs-5">Hello I'm</h1>
-                <h1 class="text-info fs-5 typing"></h1>
-             </div>
-              <h2 class="text-white-50">a Grade 10 <span class="text-info">Student</span>
-              </h2>
-              <p class=" text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.Officia laborum hic, nulla magnam facilis neque evenie est praesentium voluptate voluptatibus in qui magni iusto aliquam ut dicta consequatur modi cum.</p>
-              <a href="#" class="btn btn-info px-4 shadow big">Hire Me</a>
-            </div>
-          </div>
-  </div>
-</article>
-<!-- profile# -->
+      <div class="row min-vh-100 opacity-7 container-lg  align-content-center justify-content-center rounded-3">
+        <div class="col-md-6">
+          <img src="./img/profile.jpg" width=250px; height="250px" class=" rounded-circle shadow-lg"
+            data-aos="fade-left" data-aos-duration="2000">
+        </div>
 
-<!-- skilll -->
-<article class="skill" id="skills">
-  <div class="container-lg">
-    <div class="row m-4 shadow-lg rounded-3 p-sm-0 p-lg-5">
-      <h1 class="text-center text-white-50 fw-bolder mb-5">Those what I'm Good at</h1>
-      <div class="row mt-3">
-        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500"><!--col1-->
-          <div class="text-light">
-            <h3 class="text-white">Freelancer</h3>
-            <p class=" text-light fw-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod suscipit optio illum dolorem velit, ad doloremque nemo recusandae minus est iure consectetur at non. Itaque quas pariatur modi, eligendi rerum praesentium, dolor recusandae soluta vero sequi incidunt ad iure dolore?</p>
+        <div class="col-md-6 order-md-first mt-sm-4" data-aos="fade-right" data-aos-duration="2000">
+          <div class="d-flex">
+            <h1 class=" text-white-50 fs-5">Hello I'm</h1>
+            <h1 class="text-info fs-5 typing"></h1>
           </div>
-          <div class="row text-white-50 mx-2">
-            <div class="col-sm-4">
-              <h4 class=" fw-bold fs-3 text-white-50">30+</h4>
-              <p class=" fw-light text-info">PROJECTS</p>
+          <h2 class="text-white-50">a Grade 10 <span class="text-info">Student</span>
+          </h2>
+          <p class=" text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.Officia laborum hic, nulla
+            magnam facilis neque evenie est praesentium voluptate voluptatibus in qui magni iusto aliquam ut dicta
+            consequatur modi cum.</p>
+          <a href="#" class="btn btn-info px-4 shadow big">Hire Me</a>
+        </div>
+      </div>
+    </div>
+  </article>
+  <!-- profile# -->
+
+  <!-- skilll -->
+  <article class="skill" id="skills">
+    <div class="container-lg">
+      <div class="row m-4 shadow-lg rounded-3 p-sm-0 p-lg-5">
+        <h1 class="text-center text-white-50 fw-bolder mb-5">Those what I'm Good at</h1>
+        <div class="row mt-3">
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500"><!--col1-->
+            <div class="text-light">
+              <h3 class="text-white">Freelancer</h3>
+              <p class=" text-light fw-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod suscipit
+                optio illum dolorem velit, ad doloremque nemo recusandae minus est iure consectetur at non. Itaque quas
+                pariatur modi, eligendi rerum praesentium, dolor recusandae soluta vero sequi incidunt ad iure dolore?
+              </p>
             </div>
-            <div class="col-sm-4">
-              <h4 class="fs-3 fw-bold text-white-50">25+</h4>
-              <p class=" fw-light text-info">BUILT</p>
+            <div class="row text-white-50 mx-2">
+              <div class="col-sm-4">
+                <h4 class=" fw-bold fs-3 text-white-50">30+</h4>
+                <p class=" fw-light text-info">PROJECTS</p>
+              </div>
+              <div class="col-sm-4">
+                <h4 class="fs-3 fw-bold text-white-50">25+</h4>
+                <p class=" fw-light text-info">BUILT</p>
+              </div>
+              <div class="col-sm-4">
+                <h4 class="fs-3 fw-bold text-white-50">20+</h4>
+                <p class=" fw-light text-info">FEEDBACKS</p>
+              </div>
             </div>
-            <div class="col-sm-4">
-              <h4 class="fs-3 fw-bold text-white-50">20+</h4>
-              <p class=" fw-light text-info">FEEDBACKS</p>
+            <div class="row">
+              <div class="col-sm-4 mt-3">
+                <a href="#" class="btn btn-info shadow align-items-center big">Download CV</a>
+              </div>
+              <div class="col-sm-8 mt-3 mb-3 ">
+                <div class="social align-items-center">
+                  <a href="https://www.facebook.com/profile.php?id=100054266140034" target="_blank"
+                    class=" text-decoration-none me-3 fs-4">
+                    <i class="fa-brands fa-facebook-messenger text-info"></i>
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=100054266140034"
+                    class="text-decoration-none me-3 fs-4">
+                    <i class="fa-brands fa-facebook text-info"></i>
+                  </a>
+                  <a href="https://web.telegram.org/z/" class="text-decoration-none me-3 fs-4">
+                    <i class="fa-brands fa-telegram text-info"></i>
+                  </a>
+                  <a href="" class="text-decoration-none me-3 fs-4">
+                    <i class="fa-brands fa-viber text-info"></i>
+                  </a>
+                  <a href="" class="text-decoration-none me-3 fs-4">
+                    <i class="fa-solid fa-location-dot text-info"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 mt-3">
-              <a href="#" class="btn btn-info shadow align-items-center big">Download CV</a>
+          </div> <!--col2-->
+          <div class="col-md-6 bg-dark p-lg-5  rounded" data-aos="fade-down" data-aos-duration="2000">
+            <div class="percent-box mb-5">
+              <h4 class=" text-info fs-4 mb-3 fw-light rounded-2">HTML<i class="fa-brands fa-html5 ms-1"></i></h4>
+              <div class="progress" style="height: 2px;">
+                <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 1px high"
+                  style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
-            <div class="col-sm-8 mt-3 mb-3 ">
-              <div class="social align-items-center">
-              <a href="https://www.facebook.com/profile.php?id=100054266140034" target="_blank" class=" text-decoration-none me-3 fs-4">
-                <i class="fa-brands fa-facebook-messenger text-info"></i>
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=100054266140034" class="text-decoration-none me-3 fs-4">
-                <i class="fa-brands fa-facebook text-info"></i>
-              </a>
-              <a href="https://web.telegram.org/z/" class="text-decoration-none me-3 fs-4">
-                <i class="fa-brands fa-telegram text-info"></i>
-              </a>
-              <a href="" class="text-decoration-none me-3 fs-4">
-                <i class="fa-brands fa-viber text-info"></i>
-              </a>
-              <a href="" class="text-decoration-none me-3 fs-4">
-                <i class="fa-solid fa-location-dot text-info"></i>
-              </a>
+            <div class="percent-box mb-5">
+              <h4 class=" text-info fs-4 mb-3 fw-light rounded-2">CSS<i
+                  class="fa-brands fa-css3-alt text-success ms-1"></i></h4>
+              <div class="progress" style="height: 2px;">
+                <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 1px high"
+                  style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="percent-box mb-5">
+              <h4 class=" text-info fs-4 mb-3 fw-light rounded-2">JAVASCRIPT<i
+                  class="fa-brands fa-js text-warning ms-1"></i></h4>
+              <div class="progress" style="height: 2px;">
+                <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 1px high"
+                  style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="percent-box mb-5">
+              <h4 class=" text-info fs-4 mb-3 fw-light rounded-2">BOOSTRAP<i class="fa-brands fa-bootstrap ms-1"></i>
+              </h4>
+              <div class="progress" style="height: 2px;">
+                <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 1px high"
+                  style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </div>
-        </div> <!--col2-->
-        <div class="col-md-6 shadow bg-dark p-lg-5  rounded" data-aos="fade-down" data-aos-duration="2000">
-          <div class="percent-box mb-5">
-            <h4 class=" text-info fs-4 mb-3 fw-light rounded-2">HTML<i class="fa-brands fa-html5 ms-1"></i></h4>
-            <div class="progress" style="height: 2px;">
-              <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 1px high" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="percent-box mb-5">
-            <h4 class=" text-info fs-4 mb-3 fw-light rounded-2">CSS<i class="fa-brands fa-css3-alt text-success ms-1"></i></h4>
-            <div class="progress" style="height: 2px;">
-              <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 1px high" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="percent-box mb-5">
-            <h4 class=" text-info fs-4 mb-3 fw-light rounded-2">JAVASCRIPT<i class="fa-brands fa-js text-warning ms-1"></i></h4>
-            <div class="progress" style="height: 2px;">
-              <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 1px high" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <div class="percent-box mb-5">
-            <h4 class=" text-info fs-4 mb-3 fw-light rounded-2">BOOSTRAP<i class="fa-brands fa-bootstrap ms-1"></i></h4>
-            <div class="progress" style="height: 2px;">
-              <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 1px high" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-  </div>
-</article>
-<!-- skill -->
-<!-- Marketing -->
-<section id="service" class="service mt-4">
-  <div class="container-lg">
-    <div class="row">
-      <h1 class="text-center text-white-50 fw-bolder mb">Our Services</h1>
-      <div class="row text-center">
-      <div class="col-md-4 col-sm-6"data-aos="zoom-in-up" data-aos-duration="800">
-        <div class="card-icn p-4 rounded bg-black mb-3 shadow-lg ms-lg-5 ms-sm-3">
-            <i class="fa-solid fa-code fs-4 text-info rotate"></i>
+  </article>
+  <!-- skill -->
+  <!-- Marketing -->
+  <section id="service" class="service mt-4">
+    <div class="container-lg">
+      <div class="row">
+        <h1 class="text-center text-white-50 fw-bolder mb">Our Services</h1>
+        <div class="row text-center">
+          <div class="col-md-4 col-sm-6" data-aos="zoom-in-up" data-aos-duration="800">
+            <div class="card-icn p-4 rounded bg-black mb-3 shadow-lg ms-lg-5 ms-sm-3">
+              <i class="fa-solid fa-code fs-4 text-info rotate"></i>
               <h3 class=" text-white mb-2 mt-2">Web Development</h3>
-          <p class=" text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quibusdam, reiciendis minima reprehenderit provident dignissimos dolorem quo animi quidem at.</p>
+              <p class=" text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quibusdam,
+                reiciendis minima reprehenderit provident dignissimos dolorem quo animi quidem at.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6" data-aos="zoom-in-up" data-aos-duration="800">
+            <div class="card-icn p-4 rounded bg-black mb-3 shadow-lg ms-lg-5 ms-sm-3">
+              <i class="fa-solid fa-mug-hot fs-4 text-info big"></i>
+              <h3 class=" text-white mb-2 mt-2">Creative designs</h3>
+              <p class=" text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quibusdam,
+                reiciendis minima reprehenderit provident dignissimos dolorem quo animi quidem at.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6" data-aos="zoom-in-up" data-aos-duration="800">
+            <div class="card-icn p-4 rounded bg-black mb-3 shadow-lg ms-lg-5 ms-sm-3">
+              <i class="fa-solid fa-truck-fast fs-4 text-info move"></i>
+              <h3 class=" text-white mb-2 mt-2">Time Taken Fast</h3>
+              <p class=" text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quibusdam,
+                reiciendis minima reprehenderit provident dignissimos dolorem quo animi quidem at</p>
+            </div>
+          </div>
+  </section>
+  <section class="wide d-sm-none d-lg-block m-5" id="my-projects">
+    <div class="container-fluid">
+      <h1 class="text-white-50 fw-bolder mb-3 text-center">My Work Dones</h1>
+      <div class="row m-0 swiper mySwiper ">
+        <div class="swiper-wrapper">
+          <div class="img-cont swiper-slide position-relative w-25" data-aos="zoom-in-up" data-aos-duration="2000">
+            <img src="./img/project5.jpg" class="shadow-lg rounded" alt="">
+            <div class="clicking mt-1 position-absolute bottom-0">
+              <a href="" class="btn btn-toolbar btn-outline-info px-3 ">Live Demo</a>
+            </div>
+          </div>
+          <div class="img-cont swiper-slide position-relative w-25" data-aos="zoom-in-up" data-aos-duration="2000">
+            <img src="./img/Creative WebPage Design.jpg" class=" shadow-lg rounded" alt="">
+            <div class="clicking mt-1 position-absolute bottom-0">
+              <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
+            </div>
+          </div>
+          <div class="img-cont swiper-slide position-relative w-25" data-aos="zoom-in-up" data-aos-duration="2000">
+            <img src="./img/pj-md.png" class=" shadow-lg roundh;" alt="">
+            <div class="clicking mt-1 position-absolute bottom-0">
+              <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
+            </div>
+          </div>
+          <div class="img-cont swiper-slide position-relative w-25" data-aos="zoom-in-up" data-aos-duration="2000">
+            <img src="./img/project4.png" class=" shadow-lg rounded" alt="">
+            <div class="clicking mt-1 position-absolute bottom-0">
+              <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
+            </div>
+          </div>
+          <div class="img-cont swiper-slide position-relative w-25" data-aos="zoom-in-up" data-aos-duration="2000">
+            <img src="./img/project6.png" class=" shadow-lg rounded" alt="">
+            <div class="clicking mt-1 position-absolute bottom-0">
+              <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
+            </div>
+          </div>
+          <div class="img-cont swiper-slide position-relative w-25" data-aos="zoom-in-up" data-aos-duration="2000">
+            <img src="./img/project7.png" class=" shadow-lg rounded" alt="">
+            <div class="clicking mt-1 position-absolute bottom-0">
+              <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="col-md-4 col-sm-6"data-aos="zoom-in-up" data-aos-duration="800">
-        <div class="card-icn p-4 rounded bg-black mb-3 shadow-lg ms-lg-5 ms-sm-3">
-          <i class="fa-solid fa-mug-hot fs-4 text-info big"></i>
-          <h3 class=" text-white mb-2 mt-2">Creative designs</h3>
-          <p class=" text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quibusdam, reiciendis minima reprehenderit provident dignissimos dolorem quo animi quidem at.</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6"data-aos="zoom-in-up" data-aos-duration="800">
-        <div class="card-icn p-4 rounded bg-black mb-3 shadow-lg ms-lg-5 ms-sm-3">
-          <i class="fa-solid fa-truck-fast fs-4 text-info move"></i>
-          <h3 class=" text-white mb-2 mt-2">Time Taken Fast</h3>
-          <p class=" text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quibusdam, reiciendis minima reprehenderit provident dignissimos dolorem quo animi quidem at</p>
-        </div>
-      </div>
-</section>
-<section class="wide d-sm-none d-lg-block m-5" id="my-projects">
-  <div class="container-fluid">
-    <h1 class="text-white-50 fw-bolder mb-3 text-center">My Work Dones</h1>
-    <div class="row m-0 swiper mySwiper ">
-      <div class="swiper-wrapper">
-        <div class="img-cont swiper-slide position-relative w-25"data-aos="zoom-in-up" data-aos-duration="2000" >
-          <img src="./img/project5.jpg" class="shadow-lg rounded" alt="">
-          <div class="clicking mt-1 position-absolute bottom-0">
-            <a href="" class="btn btn-toolbar btn-outline-info px-3 ">Live Demo</a>
-          </div>
-        </div>
-        <div class="img-cont swiper-slide position-relative w-25"data-aos="zoom-in-up" data-aos-duration="2000" >
-          <img src="./img/Creative WebPage Design.jpg"class=" shadow-lg rounded" alt="">
-          <div class="clicking mt-1 position-absolute bottom-0">
-            <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
-          </div>
-        </div>
-        <div class="img-cont swiper-slide position-relative w-25"data-aos="zoom-in-up" data-aos-duration="2000" >
-          <img src="./img/pj-md.png"class=" shadow-lg roundh;" alt="">
-          <div class="clicking mt-1 position-absolute bottom-0">
-            <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
-          </div>
-        </div>
-        <div class="img-cont swiper-slide position-relative w-25"data-aos="zoom-in-up" data-aos-duration="2000" >
-          <img src="./img/project4.png"class=" shadow-lg rounded" alt="">
-          <div class="clicking mt-1 position-absolute bottom-0">
-            <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
-          </div>
-        </div>
-        <div class="img-cont swiper-slide position-relative w-25"data-aos="zoom-in-up" data-aos-duration="2000" >
-          <img src="./img/project6.png"class=" shadow-lg rounded" alt="">
-          <div class="clicking mt-1 position-absolute bottom-0">
-            <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
-          </div>
-        </div>
-        <div class="img-cont swiper-slide position-relative w-25"data-aos="zoom-in-up" data-aos-duration="2000" >
-          <img src="./img/project7.png"class=" shadow-lg rounded" alt="">
-          <div class="clicking mt-1 position-absolute bottom-0">
-            <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
     </div>
-  </div>
-</section>
-<section class="justify-content-center  d-sm-block d-lg-none d-md-none ">
-  <div class="container-fluid">
-    <h1 class="text-white-50 fw-bolder mb-0 text-center">My Work Dones</h1>
-  <div class="for-phone ">
-    <div class="row m-0 swiper myPhoneSwiper">
-      <div class="swiper-wrapper">
-        <div class="img-cont swiper-slide position-relative "data-aos="zoom-in-up" data-aos-duration="2000" >
-          <img src="./img/project5.jpg" class="shadow-lg rounded" alt="">
-          <div class="clicking mt-1 position-absolute bottom-0">
-            <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
+  </section>
+  <section class="justify-content-center  d-sm-block d-lg-none d-md-none ">
+    <div class="container-fluid">
+      <h1 class="text-white-50 fw-bolder mb-0 text-center">My Work Dones</h1>
+      <div class="for-phone ">
+        <div class="row m-0 swiper myPhoneSwiper">
+          <div class="swiper-wrapper">
+            <div class="img-cont swiper-slide position-relative " data-aos="zoom-in-up" data-aos-duration="2000">
+              <img src="./img/project5.jpg" class="shadow-lg rounded" alt="">
+              <div class="clicking mt-1 position-absolute bottom-0">
+                <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
+              </div>
+            </div>
+            <div class="img-cont swiper-slide position-relative " data-aos="zoom-in-up" data-aos-duration="2000">
+              <img src="./img/Creative WebPage Design.jpg" class=" shadow-lg rounded" alt="">
+              <div class="clicking mt-1 position-absolute bottom-0">
+                <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
+              </div>
+            </div>
+            <div class="img-cont swiper-slide position-relative " data-aos="zoom-in-up" data-aos-duration="2000">
+              <img src="./img/pj-md.png" class=" shadow-lg rounded;" alt="">
+              <div class="clicking mt-1 position-absolute bottom-0">
+                <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
+              </div>
+            </div>
+            <div class="img-cont swiper-slide position-relative " data-aos="zoom-in-up" data-aos-duration="2000">
+              <img src="./img/project4.png" class=" shadow-lg rounded" alt="">
+              <div class="clicking mt-1 position-absolute bottom-0">
+                <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
+              </div>
+            </div>
+            <div class="img-cont swiper-slide position-relative " data-aos="zoom-in-up" data-aos-duration="2000">
+              <img src="./img/project6.png" class=" shadow-lg rounded" alt="">
+              <div class="clicking mt-1 position-absolute bottom-0">
+                <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
+              </div>
+            </div>
+            <div class="img-cont swiper-slide position-relative " data-aos="zoom-in-up" data-aos-duration="2000">
+              <img src="./img/project7.png" class=" shadow-lg rounded" alt="">
+              <div class="clicking mt-1 position-absolute bottom-0">
+                <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="img-cont swiper-slide position-relative "data-aos="zoom-in-up" data-aos-duration="2000" >
-          <img src="./img/Creative WebPage Design.jpg"class=" shadow-lg rounded" alt="">
-          <div class="clicking mt-1 position-absolute bottom-0">
-            <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
-          </div>
-        </div>
-        <div class="img-cont swiper-slide position-relative "data-aos="zoom-in-up" data-aos-duration="2000" >
-          <img src="./img/pj-md.png"class=" shadow-lg rounded;" alt="">
-          <div class="clicking mt-1 position-absolute bottom-0">
-            <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
-          </div>
-        </div>
-        <div class="img-cont swiper-slide position-relative "data-aos="zoom-in-up" data-aos-duration="2000" >
-          <img src="./img/project4.png"class=" shadow-lg rounded" alt="">
-          <div class="clicking mt-1 position-absolute bottom-0">
-            <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
-          </div>
-        </div>
-        <div class="img-cont swiper-slide position-relative "data-aos="zoom-in-up" data-aos-duration="2000" >
-          <img src="./img/project6.png"class=" shadow-lg rounded" alt="">
-          <div class="clicking mt-1 position-absolute bottom-0">
-            <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
-          </div>
-        </div>
-        <div class="img-cont swiper-slide position-relative "data-aos="zoom-in-up" data-aos-duration="2000" >
-          <img src="./img/project7.png"class=" shadow-lg rounded" alt="">
-          <div class="clicking mt-1 position-absolute bottom-0">
-            <a href="" class="btn btn-toolbar btn-outline-info px-3">Live Demo</a>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
-  </div>
-  </div>
-</section>
-<!-- Marketing -->
-<!-- <div class="row m-2 text-end ms-0">
+  </section>
+  <!-- Marketing -->
+  <!-- <div class="row m-2 text-end ms-0">
   <div class="col-md-6 mb-3">
     <div class="img-cont position-relative"data-aos="zoom-in-up" data-aos-duration="2000 swiper-slide">
       <img src="./img/Multipurpose Admin Dashboard UI.jpg" class=" w-100 shadow-lg rounded" style="height:70vh;" alt="">
@@ -316,204 +343,219 @@
     </div>
   </div>
 </div> -->
-<!-- work -->
-<section class="team mt-5" id="members">
-  <div class="container-lg">
-    <h1 class="text-white-50 fw-bolder mb-5 text-center">Our Team Members</h1>
-    <div class="row justify-content-center pt-1 pb-5">
-      <div class="col-lg-8">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-info" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-info" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-info" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div  data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="carousel-item active shake">
-              <div class=" p-5 m-2 bg-light rounded-1 position-relative shadow">
-                <div class="infos d-flex align-items-center">
-                  <img src="./img/prof.png" class=" rounded-circle shadow img-thumbnail" width="120px" height="120px" alt="">
-                  <div class="infos-text ms-3">
-                    <h3>Dave Winchesters</h3>
-                    <p class=" text-muted">Backend Developer</p>
-                    <div class="stars text-danger">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                  <div class="stars text-danger position-absolute bottom-0 end-0 mb-2 fs-4">
-                    <i class="fa-brands fa-facebook-messenger me-3"></i>
-                    <i class="fa-brands fa-tiktok text-info me-3"></i>
-                    <i class="fa-brands fa-instagram text-info me-3"></i>
-                    <i class="fa-brands fa-facebook text-info me-3"></i>
-                    </div>
-                </div>
-                <p class="text-dark-50 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nemo tenetur vitae quod. Neque omnis nisi inventore deserunt eum provident ea sit ipsam similique, cupiditate reprehenderit aliquid, excepturi impedit velit.</p>
-                <a href="#" class="btn btn-info px-3">Details</a>
-              </div>
+  <!-- work -->
+  <section class="team mt-5" id="members">
+    <div class="container-lg">
+      <h1 class="text-white-50 fw-bolder mb-5 text-center">Our Team Members</h1>
+      <div class="row justify-content-center pt-1 pb-5">
+        <div class="col-lg-8">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active bg-info" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-info"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-info"
+                aria-label="Slide 3"></button>
             </div>
-            <!-- item1 -->
-            <div class="carousel-item">
-              <div class=" p-5 m-2  bg-light rounded-1 position-relative shadow">
-                <div class="infos d-flex align-items-center">
-                  <img src="./img/prof.png" class=" rounded-circle shadow img-thumbnail" width="120px" height="120px" alt="">
-                  <div class="infos-text ms-3">
-                    <h3>Andrew Melim</h3>
-                    <p class=" text-muted">Ui | Ux Designer</p>
-                    <div class="stars text-danger">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
+            <div class="carousel-inner">
+              <div data-tilt data-tilt-glare data-tilt-max-glare="0.8" class="carousel-item active shake">
+                <div class=" p-5 m-2 bg-light rounded-1 position-relative shadow">
+                  <div class="infos d-flex align-items-center">
+                    <img src="./img/prof.png" class=" rounded-circle shadow img-thumbnail" width="120px" height="120px"
+                      alt="">
+                    <div class="infos-text ms-3">
+                      <h3>Dave Winchesters</h3>
+                      <p class=" text-muted">Backend Developer</p>
+                      <div class="stars text-danger">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="stars text-danger position-absolute bottom-0 end-0 mb-2 fs-4">
+                      <i class="fa-brands fa-facebook-messenger me-3"></i>
+                      <i class="fa-brands fa-tiktok text-info me-3"></i>
+                      <i class="fa-brands fa-instagram text-info me-3"></i>
+                      <i class="fa-brands fa-facebook text-info me-3"></i>
                     </div>
                   </div>
-                  <div class="stars text-info position-absolute bottom-0 end-0 mb-2 fs-4">
-                    <i class="fa-brands fa-facebook-messenger me-3"></i>
-                    <i class="fa-brands fa-tiktok text-info me-3"></i>
-                    <i class="fa-brands fa-instagram text-info me-3"></i>
-                    <i class="fa-brands fa-facebook text-info me-3"></i>
-                    </div>
+                  <p class="text-dark-50 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nemo
+                    tenetur vitae quod. Neque omnis nisi inventore deserunt eum provident ea sit ipsam similique,
+                    cupiditate reprehenderit aliquid, excepturi impedit velit.</p>
+                  <a href="#" class="btn btn-info px-3">Details</a>
                 </div>
-                <p class="text-dark-50 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nemo tenetur vitae quod. Neque omnis nisi inventore deserunt eum provident ea sit ipsam similique, cupiditate reprehenderit aliquid, excepturi impedit velit.</p>
-                <a href="#" class="btn btn-info px-3">Details</a>
               </div>
-            </div>
-            <!-- item3 -->
-            <div class="carousel-item">
-              <div class=" p-5 m-2  bg-light rounded-1 position-relative shadow">
-                <div class="infos d-flex align-items-center">
-                  <img src="./img/prof.png" class=" rounded-circle shadow img-thumbnail" width="120px" height="120px" alt="">
-                  <div class="infos-text ms-3">
-                    <h3>Gandamar Thaung Yi</h3>
-                    <p class=" text-muted">Front End Developer</p>
-                    <div class="stars text-info">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
+              <!-- item1 -->
+              <div class="carousel-item">
+                <div class=" p-5 m-2  bg-light rounded-1 position-relative shadow">
+                  <div class="infos d-flex align-items-center">
+                    <img src="./img/prof.png" class=" rounded-circle shadow img-thumbnail" width="120px" height="120px"
+                      alt="">
+                    <div class="infos-text ms-3">
+                      <h3>Andrew Melim</h3>
+                      <p class=" text-muted">Ui | Ux Designer</p>
+                      <div class="stars text-danger">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="stars text-info position-absolute bottom-0 end-0 mb-2 fs-4">
+                      <i class="fa-brands fa-facebook-messenger me-3"></i>
+                      <i class="fa-brands fa-tiktok text-info me-3"></i>
+                      <i class="fa-brands fa-instagram text-info me-3"></i>
+                      <i class="fa-brands fa-facebook text-info me-3"></i>
                     </div>
                   </div>
-                  <div class="stars text-info position-absolute bottom-0 end-0 mb-2 fs-4">
-                    <i class="fa-brands fa-facebook-messenger me-3"></i>
-                    <i class="fa-brands fa-tiktok text-info me-3"></i>
-                    <i class="fa-brands fa-instagram text-info me-3"></i>
-                    <i class="fa-brands fa-facebook text-info me-3"></i>
-                    </div>
+                  <p class="text-dark-50 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nemo
+                    tenetur vitae quod. Neque omnis nisi inventore deserunt eum provident ea sit ipsam similique,
+                    cupiditate reprehenderit aliquid, excepturi impedit velit.</p>
+                  <a href="#" class="btn btn-info px-3">Details</a>
                 </div>
-                <p class="text-dark-50 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nemo tenetur vitae quod. Neque omnis nisi inventore deserunt eum provident ea sit ipsam similique, cupiditate reprehenderit aliquid, excepturi impedit velit.</p>
-                <a href="#" class="btn btn-info px-3">Details</a>
+              </div>
+              <!-- item3 -->
+              <div class="carousel-item">
+                <div class=" p-5 m-2  bg-light rounded-1 position-relative shadow">
+                  <div class="infos d-flex align-items-center">
+                    <img src="./img/prof.png" class=" rounded-circle shadow img-thumbnail" width="120px" height="120px"
+                      alt="">
+                    <div class="infos-text ms-3">
+                      <h3>Gandamar Thaung Yi</h3>
+                      <p class=" text-muted">Front End Developer</p>
+                      <div class="stars text-info">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="stars text-info position-absolute bottom-0 end-0 mb-2 fs-4">
+                      <i class="fa-brands fa-facebook-messenger me-3"></i>
+                      <i class="fa-brands fa-tiktok text-info me-3"></i>
+                      <i class="fa-brands fa-instagram text-info me-3"></i>
+                      <i class="fa-brands fa-facebook text-info me-3"></i>
+                    </div>
+                  </div>
+                  <p class="text-dark-50 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam nemo
+                    tenetur vitae quod. Neque omnis nisi inventore deserunt eum provident ea sit ipsam similique,
+                    cupiditate reprehenderit aliquid, excepturi impedit velit.</p>
+                  <a href="#" class="btn btn-info px-3">Details</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="end mt-5 border-bottom"id="contact">
-  <h1 class="text-center text-white-50 fw-bolder mb-5">Contact Us</h1>
-  <div class="container-md">
-    <div class="row">
-      <div class="col-md-5">
-        <div class=" py-5">
-          <div class="">
-            <div class=" d-flex">
-              <i class="fa-solid fa-phone fs-3 my-3 text-info mx-2"></i>
-              <div class="text">
-                <h3 class=" text-white-50 fw-bold fs-4">Phone</h3>
-                <p class=" text-light">09797957976</p>
+  <section class="end mt-5 border-bottom" id="contact">
+    <h1 class="text-center text-white-50 fw-bolder mb-5">Contact Us</h1>
+    <div class="container-md">
+      <div class="row">
+        <div class="col-md-5">
+          <div class=" py-5">
+            <div class="">
+              <div class=" d-flex">
+                <i class="fa-solid fa-phone fs-3 my-3 text-info mx-2"></i>
+                <div class="text">
+                  <h3 class=" text-white-50 fw-bold fs-4">Phone</h3>
+                  <p class=" text-light">09797957976</p>
+                </div>
               </div>
-            </div>
-            <div class=" d-flex">
-              <i class="fa-solid fa-envelope fs-3 my-3 text-info mx-2"></i>
-              <div class="text">
-                <h3 class=" text-white-50 fw-bold fs-4">Email</h3>
-                <p class=" text-light">mrthaungyi@gmail.com</p>
+              <div class=" d-flex">
+                <i class="fa-solid fa-envelope fs-3 my-3 text-info mx-2"></i>
+                <div class="text">
+                  <h3 class=" text-white-50 fw-bold fs-4">Email</h3>
+                  <p class=" text-light">mrthaungyi@gmail.com</p>
+                </div>
               </div>
-            </div>
-            <div class=" d-flex">
-              <i class="fa-solid fa-map-location-dot fs-3 my-3 text-info mx-2"></i>
-              <div class="text">
-                <h3 class=" text-white-50 fw-bold fs-4">Address</h3>
-                <p class=" text-light">Yangon</p>
+              <div class=" d-flex">
+                <i class="fa-solid fa-map-location-dot fs-3 my-3 text-info mx-2"></i>
+                <div class="text">
+                  <h3 class=" text-white-50 fw-bold fs-4">Address</h3>
+                  <p class=" text-light">Yangon</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-7 justify-content-start align-items-center px-5" data-aos="fade-down" data-aos-duration="1200">
-        <form action="#" class="">
-          <div class="row my-3">
-            <div class="col-md-6 my-2">
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Name...">
-                <label for="floatingInput">Name</label>
+        <div class="col-md-7 justify-content-start align-items-center px-5" data-aos="fade-down"
+          data-aos-duration="1200">
+          <form action="#" class="">
+            <div class="row my-3">
+              <div class="col-md-6 my-2">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Name...">
+                  <label for="floatingInput">Name</label>
+                </div>
+              </div>
+              <div class="col-md-6 my-2 form-floating mb-3">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
               </div>
             </div>
-            <div class="col-md-6 my-2 form-floating mb-3">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+            <div class="row my-3 my-2">
+              <div class="col-lg-12">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea" class="">Address...</label>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row my-3 my-2">
-            <div class="col-lg-12">
+            <div class="row my-3 my-2">
               <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea" class="">Address...</label>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 100px"></textarea>
+                <label for="floatingTextarea2" class=" ms-2">Comments</label>
               </div>
             </div>
-          </div>
-          <div class="row my-3 my-2">
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-              <label for="floatingTextarea2" class=" ms-2">Comments</label>
+            <div class="row my-3">
+              <div class="col-md-8 justify-content-center">
+                <button type="submit" class="btn btn-danger px-3">Send Message<i
+                    class="fa-solid fa-paper-plane mx-1"></i></button>
+              </div>
             </div>
-          </div>
-          <div class="row my-3">
-            <div class="col-md-8 justify-content-center">
-              <button type="submit" class="btn btn-danger px-3">Send Message<i class="fa-solid fa-paper-plane mx-1"></i></button>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- work -->
-<section class="booking" >
-  <div class="container-fluid py-5">
-    <div class="row text-center">
-      <div class="fle-box">
-        <p class="fs-5 text-white-50">Do you have any projects?</p>
-        <h2 class=" fs-1 pb-3 pt-0 fw-bold text-white">We're Available for Freelancer Projects!!!</h2>
-        <a href="#" class="btn btn-outline-light big">Contact Me</a>
+  </section>
+  <!-- work -->
+  <section class="booking">
+    <div class="container-fluid py-5">
+      <div class="row text-center">
+        <div class="fle-box">
+          <p class="fs-5 text-white-50">Do you have any projects?</p>
+          <h2 class=" fs-1 pb-3 pt-0 fw-bold text-white">We're Available for Freelancer Projects!!!</h2>
+          <a href="#" class="btn btn-outline-light big">Contact Me</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- The End -->
-<footer class=" border-top">
-  <div class="container-fluid">
+  </section>
+  <!-- The End -->
+  <footer class=" border-top">
+    <div class="container-fluid">
       <div class="text-center py-3 my-2">
         <p class="text-white-50 fs-5">My Life, My Passion, My Decision. Let me freely Decide!</p>
       </div>
     </div>
-</footer>
+  </footer>
 </body>
 <script src="./js/bootstrap.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
- <script>
+<script>
   AOS.init();
- </script>
- <script type="text/javascript" src="vanilla-tilt.js"></script>
- <script src="./js/custom.js"></script>
-</html>
+</script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script src="./js/custom.js"></script>
 
+</html>
